@@ -128,16 +128,14 @@ bottom: -1px;
 background: #404bbf;
 border-radius: 2px;
 }
-.menu-item-link.color{
-  color: #404bbf;
-}
+
 .menu-item-link:hover,
 .menu-item-link:focus {
   color: #404bbf;
 }
 
 .menu-item-link.active {
-  color: var(--logo-color);
+   color: #404bbf;
 }
 .contacts {
   font-style: normal;
