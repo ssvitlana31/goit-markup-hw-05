@@ -116,7 +116,7 @@ body {
    
   
 }
-.menu-item-link.first{
+.first{
   color: #404bbf; 
 }
 .menu-item-link.active::after{ 
@@ -210,7 +210,7 @@ border-radius: 2px;
   margin-bottom: 48px;
 }
 .button-service {
-  font-family: inherit;
+font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -227,7 +227,7 @@ border-radius: 2px;
   height: 56px;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+Ї}
 .button-service:focus {
   background-color: #404bbf;
 }
@@ -375,7 +375,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   height: 100%;
   background-color: var(--logo-color);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
 }
 .social-icon:hover,
@@ -384,6 +384,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .icon {
   fill: var(--button-background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list {
   display: flex;
@@ -640,6 +641,7 @@ border: 1px solid #404bbf;
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   background-color: rgb(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
