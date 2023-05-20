@@ -113,12 +113,10 @@ body {
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+   color: #404bbf; 
   
 }
-.first{
-  color: #404bbf; 
-}
+
 .menu-item-link.active::after{ 
   content:"";
   position: absolute;
@@ -375,7 +373,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   height: 100%;
   background-color: var(--logo-color);
   border-radius: 50%;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   
 }
 .social-icon:hover,
@@ -448,6 +446,7 @@ border: 1px solid #404bbf;
 } 
 .customers-icon {
   fill: currentColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -485,8 +484,7 @@ border: 1px solid #404bbf;
   color: #f4f4fd;
   width: 264px;
 }
-.media {
-}
+
 .social-media {
   font-weight: 500;
   color: var(--brend-background-color);
@@ -518,6 +516,7 @@ border: 1px solid #404bbf;
 }
 .media-icon {
   fill: var(--button-background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 
@@ -577,6 +576,9 @@ border: 1px solid #404bbf;
 .projects-list:hover .overlay-text{
   transform: translateY(0);
 }
+.projects-link:focus .overlay-text{
+  transform: translateY(0);
+}
 .overlay{
  position: relative;
  overflow: hidden;  
@@ -591,7 +593,7 @@ border: 1px solid #404bbf;
   background-color: var(--logo-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 40px;
+  padding: 40px 32px;
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -666,11 +668,11 @@ position: absolute;
 display: flex;
 align-items: center;
 justify-content: center;
-  background-color: #e7e9fc
-  width: 24px;
-  height: 24px;
-  border:  1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+background-color:#e7e9fc;
+width: 24px;
+height: 24px;
+border:  1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
  padding: 0;
  margin-left: auto;
  top: 24px;
@@ -682,7 +684,16 @@ justify-content: center;
 .close-button:hover{
    background-color: #404bbf; 
    border: none;
-
+}
+.close-button:focus{
+ background-color: #404bbf; 
+ border: none; 
+}
+.close-button:hover .close-modal{
+fill: #ffffff
+}
+.close-button:focus .close-modal{
+  fill: #ffffff;
 }
 .close-modal{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
